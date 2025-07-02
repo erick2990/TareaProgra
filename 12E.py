@@ -2,8 +2,6 @@
 import math
 from os import MFD_ALLOW_SEALING
 
-fin=True
-
 def a_Circulo():
     radio = int(input('Ingrese el radio de la circunferencia: '))
     res = math.pi*(radio**2)
@@ -26,6 +24,8 @@ Areas = {
     2: a_Cuadrado,
     3: a_Triangulo
 }
+
+fin=True
 
 while fin:
     print('Calculo de áreas: \r\n1. Circulo \r\n2.Cuadrado \r\n3.Triangulo \r\n4.Salir')
